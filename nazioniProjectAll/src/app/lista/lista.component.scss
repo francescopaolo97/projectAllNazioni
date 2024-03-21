@@ -1,0 +1,45 @@
+.li-style {
+  border-radius: 100px;
+  border-bottom: 4px solid;
+  padding: 10px;
+  list-style-type: none;
+  gap: 100px;
+  margin: 0;
+  overflow: hidden;
+  backdrop-filter: blur(10px);
+  font-size: 30px;
+}
+.image {
+  width: 90px;
+  height: 75px;
+  border: 2px solid;
+  border-radius: 50px;
+  padding: 7px;
+  background: white;
+  cursor: pointer;
+  transition: all 1s;
+}
+.image:hover {
+  transform: scale(1.3);
+}
+.d-number {
+  border: 3px solid;
+  border-radius: 50%;
+  width: 8%;
+  font-size: 60px;
+  margin-right: 5%;
+  backdrop-filter: blur(10px);
+}
+.title img {
+  width: 35%;
+  height: 30vh;
+  border-radius: 50px;
+}
+.title span {
+  font-size: 55px;
+  font-family: fangsong;
+  text-shadow: 5px 5px 5px black, 5px 5px 5px black;
+}
+.l-body {
+  background: url("/assets/mappaMondo.jpg");
+}

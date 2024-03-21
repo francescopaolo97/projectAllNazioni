@@ -1,13 +1,40 @@
 <div class="d-body w-100" *ngIf="nazioneSingola">
   <div class="card">
-    <img src="{{ nazioneSingola[0].flags.png }}" viewBox="0 0 24 24" />
-    <div class="card__content">
+    <img
+      src="{{ nazioneSingola[0].flags.png }}"
+      viewBox="0 0 24 24"
+      class="w-100"
+    />
+    <div
+      class="card__content"
+      [ngStyle]="{ background: 'url(nazioneSingola[0].flags.png)' }"
+    >
       <p class="card__title">{{ nazioneSingola[0].name.common }}</p>
-      <p class="card__description">
+      <!-- <p class="card__description">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
         veniam, quis nostrud exercitation ullamco.
-      </p>
+      </p> -->
+      <li><strong>Capitale :</strong> {{ nazioneSingola[0].capital[0] }}</li>
+      <li><strong>Regione :</strong> {{ nazioneSingola[0].region }}</li>
+      <li *ngIf="nazioneSingola[0].languages.ell">
+        <strong>English Language :</strong>{{ nazioneSingola[0].languages.ell }}
+      </li>
+      <li *ngIf="nazioneSingola[0].languages.tur">
+        <strong>Turkish Language :</strong>{{ nazioneSingola[0].languages.tur }}
+      </li>
+      <li><strong>Popolazione :</strong> {{ nazioneSingola[0].population }}</li>
+      <li><strong>Guida : </strong>{{ nazioneSingola[0].car.side }}</li>
     </div>
   </div>
 </div>
+<!-- name.common dalla prima api,
+DALLA SECONDA API CON AGGIUNTA DEL PATH /name/cosachepasso prendo
+capital,region,
+languages.ell,
+languages.tur,
+flags.png,
+maps.googleMaps,
+population,
+car.signs,
+car.side -->
