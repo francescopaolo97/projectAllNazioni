@@ -23,18 +23,12 @@
       <li *ngIf="nazioneSingola[0].languages.tur">
         <strong>Turkish Language :</strong>{{ nazioneSingola[0].languages.tur }}
       </li>
+      <li *ngIf="nazioneSingola[0].languages.eng">
+        <strong>English Language :</strong>{{ nazioneSingola[0].languages.eng }}
+      </li>
       <li><strong>Popolazione :</strong> {{ nazioneSingola[0].population }}</li>
       <li><strong>Guida : </strong>{{ nazioneSingola[0].car.side }}</li>
     </div>
   </div>
 </div>
-<!-- name.common dalla prima api,
-DALLA SECONDA API CON AGGIUNTA DEL PATH /name/cosachepasso prendo
-capital,region,
-languages.ell,
-languages.tur,
-flags.png,
-maps.googleMaps,
-population,
-car.signs,
-car.side -->
+<div id="mapid" style="width: 600px; height: 523px"></div>
